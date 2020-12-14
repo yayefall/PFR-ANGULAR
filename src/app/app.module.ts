@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import {AngularMaterialModule} from './material.module';
 import { ConnexionComponent } from './connexion/connexion.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,11 +14,12 @@ import { ConnexionComponent } from './connexion/connexion.component';
     HomeComponent,
     ConnexionComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    AngularMaterialModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        AngularMaterialModule,
+        ReactiveFormsModule,
+    ],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
